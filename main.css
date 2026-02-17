@@ -2,6 +2,7 @@
     height: 746px;
     display: flex;
     flex-direction: row;
+    flex: 1;
 }
 
 
@@ -14,4 +15,5 @@
 .main-content {
     background-color: blueviolet;
     width: 100%;
+
 }
