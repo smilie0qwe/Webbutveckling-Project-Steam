@@ -7,7 +7,6 @@ body {
 
 .container {
     display: grid;
-    min-height: 100vh;
 }
 
 
@@ -279,5 +278,6 @@ padding-bottom: 2px;
     }
 
 }
+
 
 
