@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img-logo's/steam-logo.png">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bottombar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="left-section">
+                <div class="menu">
+                    <a href="#" class="steam"><img class="logo-small" src="img-logo's/steam-logo.png" alt="">Steam</a>
+                    <a href="#" class="view">View</a>
+                    <a href="#">Friends</a>
+                    <a href="#" class="games">Games</a>
+                    <a href="#" class="help">Help</a>
+                    <div class="menu-dropdown">
+                        <button class="dropdown-menu">More</button>
+                        <div class="menu-items">
+                            <a class="view-dropdown" href="">View</a>
+                            <a class="friends-dropdown" href="#">Friends</a>
+                            <a class="games-dropdown" href="#">Games</a>
+                            <a class="help-dropdown" href="#">Help</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                        <a href="#" class="store">Store</a>
+                        <a href="#" class="active">Library</a>
+                        <a href="#" class="community">Community</a>
+                        <a href="#" class="user">Muckemannen</a>
+                        <div class="tabs-dropdown">
+                            <button class="dropdown-tabs">More</button>
+                            <div class="tabs-items">
+                                <a href="#">Store</a>
+                                <a href="#">Library</a>
+                                <a href="#">Community</a>
+                                <a href="#">Muckemannen</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-dropdown">
+                    <button class="dropdown-right">More</button>
+                    <div class="right-items">
+                        <a href="#">News</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Profile</a>
+                    </div>
+                </div>
+                <div class="news"><img class="small-icons" src="img-icon's/megaphone.svg" alt=""></div>
+                <div class="notifications"><img class="small-icons" src="img-icon's/bell.svg" alt=""></div>
+                <div class="profile">
+                    <img class="" src="img-profile's/muckemannam-pfp.jpg" alt="">
+                    <span class="profile-name">Muckemannen</span>
+                    <span class="profile-money">0,67€</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar-left"></div>
+            <div class="main-content"></div>
+        </div>
+        <div class="bottombar">
+            <div class="bottom-left"><img src="" alt=""><a href="#">Add Games</a></div>
+            <div class="bottom-middle"><img src="" alt=""><a href="#">Downloads</a></div>
+            <div class="bottom-right"><a href="#">Friends & Chat</a><img src="" alt=""></div>
+        </div>
+    </div>
+</body>
+<script>
+document.querySelectorAll('button[class^="dropdown-"]').forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const parent = btn.parentElement;
+        document.querySelectorAll('.open').forEach(el => {
+            if (el !== parent) el.classList.remove('open');
+        });
+        parent.classList.toggle('open');
+    });
+});
+
+document.addEventListener('click', () => {
+    document.querySelectorAll('.open').forEach(el => el.classList.remove('open'));
+});
+</script> 
+</html>

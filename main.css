@@ -1,0 +1,17 @@
+.main {
+    height: 746px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sidebar-left {
+    width: 235px;
+    background-color: pink;
+}
+
+
+.main-content {
+    background-color: blueviolet;
+    width: 100%;
+}

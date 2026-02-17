@@ -1,0 +1,17 @@
+.bottombar {
+    background-color: #171D25;
+    height: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 8px;
+}
+
+
+.bottom-left a, .bottom-middle a, .bottom-right a{
+    color: #8f98a0;
+    text-decoration: none;
+    font-size: 11px;
+}
