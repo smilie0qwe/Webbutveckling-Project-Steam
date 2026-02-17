@@ -1,8 +1,6 @@
 .main {
-    height: 746px;
-    display: flex;
-    flex-direction: row;
     flex: 1;
+    display: flex; 
 }
 
 
@@ -14,6 +12,5 @@
 
 .main-content {
     background-color: blueviolet;
-    width: 100%;
-
+    flex: 1;
 }
