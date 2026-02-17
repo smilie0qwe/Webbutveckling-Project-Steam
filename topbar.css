@@ -104,14 +104,15 @@ padding-bottom: 2px;
 
 .right-section {
     height: 20px;
-    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     gap: 16px;
     padding: 0 12px;
-    margin-top: 8px;
+    padding-top: 9px;
+    flex: 1;
+    min-width: 0;
 }
 
 
@@ -124,6 +125,7 @@ padding-bottom: 2px;
     display: flex;
     justify-content: center;
 }
+
 
 .news:hover {
     background-color: #4bb4ff;
@@ -146,33 +148,46 @@ padding-bottom: 2px;
     justify-content: center;
 }
 
+
 .notifications:hover {
     background-color: #85b125;
 }
 
 
-.profile-name { 
-    color: #4BB4FF;
-}
-
-
-.profile-money {
-    color: #8f98a0;
-}
-
-
 .profile {
-    background-color: #272D37;
-    padding: 4px;
-    border-radius: 2px;
-    font-size: 13px;
-    height: 14.px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 5px;
-    align-items: top;
-    height: 100%;
+    padding: 4px;
+    background-color: #272D37;
+    border-radius: 2px;
+    
+    flex-shrink: 1;
+    min-width: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
+
+.profile img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    border-right: 2px solid #4BB4FF;
+}
+
+
+.profile-name { 
+    color: #4BB4FF; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.profile-money { color: #8f98a0; }
 
 
 .profile img {
