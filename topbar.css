@@ -293,4 +293,8 @@ padding-bottom: 2px;
         font-size: 20px;
         padding: 2px 4px;
     }
+    .logo-small {
+        width: 20px;
+        height: 20px;
+    }
 }
