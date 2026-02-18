@@ -263,7 +263,7 @@ padding-bottom: 2px;
 }
 
 @media (max-width: 798px) {
-    .view, .games, .help, .store, .community, .user, .news, .notifications {
+    .view, .games, .help, .store, .community, .user, .news, .notifications, .library {
         display: none;
     }
     .dropdown-menu, .dropdown-tabs, .dropdown-right {

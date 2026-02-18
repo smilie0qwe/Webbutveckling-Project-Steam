@@ -6,18 +6,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/steamprofile.css">
     <link rel="stylesheet" href="css/steammiddleprofile.css">
+    <link rel="stylesheet" href="css/topbar.css">
 </head>
 <body>
-    <div class="topbar">
-        här ska topbaren var
-    </div>
+        <div class="topbar">
+            <div class="left-section">
+                <div class="menu">
+                    <a href="#" class="steam"><img class="logo-small" src="img-logo_s/steam-logo.png" alt="">Steam</a>
+                    <a href="#" class="view">View</a>
+                    <a href="#">Friends</a>
+                    <a href="#" class="games">Games</a>
+                    <a href="#" class="help">Help</a>
+                    <div class="menu-dropdown">
+                        <button class="dropdown-menu">More</button>
+                        <div class="menu-items">
+                            <a class="view-dropdown" href="">View</a>
+                            <a class="friends-dropdown" href="#">Friends</a>
+                            <a class="games-dropdown" href="#">Games</a>
+                            <a class="help-dropdown" href="#">Help</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                        <a href="#" class="store">Store</a>
+                        <a href="index.html" class="library">Library</a>
+                        <a href="#" class="community">Community</a>
+                        <a href="#" class="active">Muckemannen</a>
+                        <div class="tabs-dropdown">
+                            <button class="dropdown-tabs">More</button>
+                            <div class="tabs-items">
+                                <a href="#">Store</a>
+                                <a href="#">Muckemannen</a>
+                                <a href="#">Community</a>
+                                <a href="#">Library</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-dropdown">
+                    <button class="dropdown-right">More</button>
+                    <div class="right-items">
+                        <a href="#">News</a>
+                        <a href="#">Notifications</a>
+                        <a href="steamprofil.html">Profile</a>
+                    </div>
+                </div>
+                <div class="news"><img class="small-icons" src="img-icon_s/megaphone.svg" alt=""></div>
+                <div class="notifications"><img class="small-icons" src="img-icon_s/bell.svg" alt=""></div>
+                <a class="profile" href="steamprofil.html">
+                    <img class="" src="img-profile_s/muckemannam-pfp.jpg" alt="">
+                    <span class="profile-name">Muckemannen</span>
+                    <span class="profile-money">0,67€</span>
+                </a>
+            </div>
+        </div>
         <div class="profilebackground">
             <div class="top-profile">
                 <div class="top-left-profile">
                     <div class="profile-pic">
                         <img class="pfp" src="img-profile_s/steampfp.jpg" alt="">
                     </div>
-                    <div class="profile-name">
+                    <div class="profile-name-benjamin">
                         <span class="usernam">Muckemannen</span>
                         <span class="realname">Marcus Werlinder</span>
                         <span class="spelarspel">Spelar spel</span>
@@ -37,7 +87,7 @@
                 </div>
             </div>
             <div class="middle-left-profile">
-                <div class="games">
+                <div class="games-benjamin">
                     <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3772810/3542f2960841d2c74d09ccd6a03d6673919868bc/capsule_184x69.jpg?t=1768834820">
                     <span class="game-name">Desktop Defender</span>
                 </div>
@@ -45,4 +95,20 @@
         </div>
     </div>
 </body>
+<script>
+document.querySelectorAll('button[class^="dropdown-"]').forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const parent = btn.parentElement;
+        document.querySelectorAll('.open').forEach(el => {
+            if (el !== parent) el.classList.remove('open');
+        });
+        parent.classList.toggle('open');
+    });
+});
+
+document.addEventListener('click', () => {
+    document.querySelectorAll('.open').forEach(el => el.classList.remove('open'));
+});
+</script> 
 </html>
