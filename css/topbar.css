@@ -1,0 +1,300 @@
+body { 
+    margin: 0; 
+    background: #0b0e13; 
+    font-family: Arial, sans-serif; 
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topbar {
+height: 72px;
+background: #171D25;
+display: flex;
+padding: 0 12px;
+color: #8f98a0;
+}
+
+
+.logo { 
+    color: #c7d5e0; 
+    font-weight: bold; 
+    margin-right: 16px;
+}
+
+
+.steam {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.logo-small {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
+
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+
+.menu a {
+color: #8f98a0;
+text-decoration: none;
+margin-right: 10px;
+font-size: 11px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.menu a:hover { color: #c7d5e0; }
+
+
+.tabs {
+    align-items: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tabs a {
+color: #DCDEDF;
+text-decoration: none;
+margin-right: 16px;
+font-size: 20px;
+}
+
+
+.tabs a.active {
+color: #1a9fff;
+border-bottom: 3px solid #1a9fff;
+padding-bottom: 2px;
+}
+
+
+.mid { 
+    flex: 1; 
+}
+
+
+.user { 
+    color: #c7d5e0; 
+    font-size: 14px; 
+}
+
+
+.right-section {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+    padding: 0 12px;
+    padding-top: 9px;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.news {
+    background-color: #1999FF;
+    padding: 4px;
+    border-radius: 2px;
+    height: 14px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.news:hover {
+    background-color: #4bb4ff;
+}
+
+
+.small-icons {
+    width: 16px;
+    height: 16px;
+}
+
+
+.notifications {
+    background-color: #5C7E10;
+    padding: 4px;
+    border-radius: 2px;
+    height: 14px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.notifications:hover {
+    background-color: #85b125;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px;
+    background-color: #272D37;
+    border-radius: 2px;
+    
+    flex-shrink: 1;
+    min-width: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.profile img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    border-right: 2px solid #4BB4FF;
+}
+
+
+.profile-name { 
+    color: #4BB4FF; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.profile-money { color: #8f98a0; }
+
+
+.profile img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    border-right: 2px solid #4BB4FF;
+}
+
+
+.dropdown-tabs, .dropdown-menu, .dropdown-right {
+    display: none;
+}
+
+
+.menu-dropdown,
+.tabs-dropdown,
+.right-dropdown {
+    position: static;
+    justify-content: center;
+}
+
+
+.menu-items,
+.tabs-items,
+.right-items {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #171D25;
+    border: 1px solid #2b343d;
+    padding: 6px 0;
+    border-radius: 8px;
+    min-width: 100%;
+    top: 11%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.open .menu-items,
+.open .tabs-items,
+.open .right-items {
+    display: flex;
+}
+
+.menu-items a,
+.tabs-items a,
+.right-items a {
+    display: flex;
+    color: #c7d5e0;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 30px;
+}
+
+.menu-items a:hover,
+.tabs-items a:hover,
+.right-items a:hover {
+    background: #222831;
+    color: #ffffff;
+}
+
+.dropdown-tabs, .dropdown-menu {
+    background: none;
+    background-color: transparent;
+    color: #8f98a0  ;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    border-left: #8f98a0 1px solid;;
+}
+
+.dropdown-right {
+    background: none;
+    background-color: transparent;
+    color: #8f98a0  ;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    border-right: #8f98a0 1px solid;
+}
+
+@media (max-width: 798px) {
+    .view, .games, .help, .store, .community, .user, .news, .notifications {
+        display: none;
+    }
+    .dropdown-menu, .dropdown-tabs, .dropdown-right {
+        display: flex;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+    .tabs a {
+        font-size: 30px;
+    }
+    .topbar {
+        height: auto;
+    }
+    .left-section {
+        padding: 8px 0;
+    }
+    .profile {
+        font-size: 20px;
+        padding: 2px 4px;
+    }
+    .logo-small {
+        width: 20px;
+        height: 20px;
+    }
+}
