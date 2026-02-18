@@ -198,6 +198,12 @@ padding-bottom: 2px;
 }
 
 
+.no_decor {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .dropdown-tabs, .dropdown-menu, .dropdown-right {
     display: none;
 }
