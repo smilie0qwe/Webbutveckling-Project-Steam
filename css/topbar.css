@@ -164,10 +164,6 @@ padding-bottom: 2px;
     
     flex-shrink: 1;
     min-width: 0;
-
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 
@@ -187,7 +183,9 @@ padding-bottom: 2px;
 }
 
 
-.profile-money { color: #8f98a0; }
+.profile-money { 
+    color: #8f98a0; 
+}
 
 
 .profile img {
@@ -201,6 +199,20 @@ padding-bottom: 2px;
 .no_decor {
     text-decoration: none;
     color: inherit;
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px;
+    background-color: #272D37;
+    border-radius: 2px;
+    
+    flex-shrink: 1;
+    min-width: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
