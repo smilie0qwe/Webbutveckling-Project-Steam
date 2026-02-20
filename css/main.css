@@ -14,11 +14,109 @@ body {
 
 .sidebar-left {
     width: 235px;
-    background-color: pink;
+    background-color: #282D35;
 }
 
 
+.home-outside {
+    height: 33px;
+    background: #171D25;
+    padding: 5px 0px; 
+    display: flex;
+    flex-direction: row;
+}
+
+
+.home {
+    width: 80%;
+    background-color: #3E4047;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 13px;
+    padding-left: 4px;
+}
+
+
+.home-options {
+    width: 33px;
+    background-color: #25272D;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.sort-menu {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding: 4px 0px;
+    align-items: center;
+    color: white;
+    gap: 4px;
+}
+
+
+.sort-button {
+    background-color: #25282D;
+    border-radius: 2px;
+    width: 60%;
+    height: 74%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+}
+
+
+.back-top {
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    background-color: #32373E;
+}
+
+
+.sort-time, .sort-playable {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+
+
 .main-content {
-    background-color: blueviolet;
+    background-color: #2D333C;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: #17191B solid 1px;
+}
+
+
+.top-line {
+    height: 18px;
+    background: #171D25;
+    display: flex;
+    border-top: #24282F solid 1px;
+}
+
+
+.add-shelf {
+    height: 40px;
+    background-color: #2D333C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: #24282F solid 1px;
+    justify-content: center;
+    align-items: center;
+    color: #5E6267;
 }
