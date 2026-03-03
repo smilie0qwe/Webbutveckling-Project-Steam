@@ -29,7 +29,7 @@ body {
 
 .home {
     width: 80%;
-    background-color: #3E4047;
+    background-color: #25272D;
     border-radius: 2px;
     align-items: center;
     display: flex;
@@ -119,4 +119,10 @@ body {
     justify-content: center;
     align-items: center;
     color: #5E6267;
+}
+
+@media (max-width: 798px) {
+    .sidebar-left {
+        display: none;
+    }
 }
