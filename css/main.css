@@ -140,6 +140,35 @@ body {
 }
 
 
+.search_items {
+    overflow-y: auto;
+    border-radius: 4px;
+}
+
+
+.game-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+
+.search-item {
+    padding: 2px 8px;
+    color: #c7d5e0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.search-item:hover {
+    background-color: #3e444e;
+}
+
+
 
 
 
@@ -172,6 +201,68 @@ body {
     align-items: center;
     color: #5E6267;
 }
+
+
+.main_items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.shelf {
+    display: flex;
+    height: 300px;
+}
+
+
+.top-shelf {
+    height: 40px;
+    width: 100%;
+    background-color: #2D333C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.shelf-name {
+    font-size: 16px;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+
+
+.shelf-line-detection {
+    height: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.shelf-line-detection:hover {
+    background-color: #373C45;
+    transform: translateY(0);
+}
+
+
+.shelf-line {
+    background-color: #373C45;
+    height: 2px;
+    width: 100%;
+}
+
+
 
 @media (max-width: 798px) {
     .sidebar-left {
