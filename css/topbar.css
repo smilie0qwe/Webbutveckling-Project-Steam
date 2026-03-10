@@ -294,7 +294,10 @@ padding-bottom: 2px;
         font-size: 30px;
     }
     .topbar {
-        height: auto;
+        height: 10vh;
+    }
+    .main {
+        height: 85vh;
     }
     .left-section {
         padding: 8px 0;
