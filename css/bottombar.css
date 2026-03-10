@@ -1,6 +1,6 @@
 .bottombar {
     background-color: #171D25;
-    height: 3vh;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
