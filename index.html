@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img-logo's/steam-logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/img-logo_s/steam-logo.png">
     <link rel="stylesheet" href="css/bottombar.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/topbar.css">
@@ -14,7 +14,7 @@
         <div class="topbar">
             <div class="left-section">
                 <div class="menu">
-                    <a href="#" class="steam"><img class="logo-small" src="img-logo_s/steam-logo.png" alt="">Steam</a>
+                    <a href="#" class="steam"><img class="logo-small" src="img/img-logo_s/steam-logo.png" alt="">Steam</a>
                     <a href="#" class="view">View</a>
                     <a href="#">Friends</a>
                     <a href="#" class="games">Games</a>
@@ -54,18 +54,38 @@
                         <a href="steamprofil.html">Profile</a>
                     </div>
                 </div>
-                <div class="news"><img class="small-icons" src="img-icon_s/megaphone.svg" alt=""></div>
-                <div class="notifications"><img class="small-icons" src="img-icon_s/bell.svg" alt=""></div>
+                <div class="news"><img class="small-icons" src="img/img-icon_s/megaphone.svg" alt=""></div>
+                <div class="notifications"><img class="small-icons" src="img/img-icon_s/bell.svg" alt=""></div>
                 <a class="profile" href="steamprofil.html">
-                    <img class="" src="img-profile_s/muckemannam-pfp.jpg" alt="">
+                    <img class="" src="img/img-profile_s/muckemannam-pfp.jpg" alt="">
                     <span class="profile-name">Muckemannen</span>
                     <span class="profile-money">0,67€</span>
                 </a>
             </div>
         </div>
         <div class="main">
-            <div class="sidebar-left"></div>
-            <div class="main-content"></div>
+            <div class="sidebar-left">
+                <div class="home-outside">
+                    <div class="home">Home</div>
+                    <div class="home-options"></div>
+                </div>
+                <div class="sort-menu">
+                    <button class="sort-button"></button>
+                    <button class="back-top"></button>
+                    <div class="sort-time">O</div>
+                    <div class="sort-playable">></div>
+                </div>
+                <div class="searchbar">
+                    <search>
+                        <input class="search-input" type="text" placeholder="Search by name">
+                    </search>
+                    <div class="filter"></div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="content-news"></div>
+                <div class="add-shelf">Add Shelf</div>
+            </div>
         </div>
         <div class="bottombar">
             <div class="bottom-left"><img src="" alt=""><a href="#">Add Games</a></div>
@@ -74,22 +94,7 @@
         </div>
     </div>
 </body>
-<script>
-document.querySelectorAll('button[class^="dropdown-"]').forEach(btn => {
-    btn.addEventListener('click', e => {
-        e.stopPropagation();
-        const parent = btn.parentElement;
-        document.querySelectorAll('.open').forEach(el => {
-            if (el !== parent) el.classList.remove('open');
-        });
-        parent.classList.toggle('open');
-    });
-});
-
-document.addEventListener('click', () => {
-    document.querySelectorAll('.open').forEach(el => el.classList.remove('open'));
-});
-</script> 
+<script src="js/topbar.js"></script>
 </html>
 
 

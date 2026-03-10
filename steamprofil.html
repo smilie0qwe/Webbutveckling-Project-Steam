@@ -13,7 +13,7 @@
         <div class="topbar">
             <div class="left-section">
                 <div class="menu">
-                    <a href="#" class="steam"><img class="logo-small" src="img-logo_s/steam-logo.png" alt="">Steam</a>
+                    <a href="#" class="steam"><img class="logo-small" src="img/img-logo_s/steam-logo.png" alt="">Steam</a>
                     <a href="#" class="view">View</a>
                     <a href="#">Friends</a>
                     <a href="#" class="games">Games</a>
@@ -53,10 +53,10 @@
                         <a href="steamprofil.html">Profile</a>
                     </div>
                 </div>
-                <div class="news"><img class="small-icons" src="img-icon_s/megaphone.svg" alt=""></div>
-                <div class="notifications"><img class="small-icons" src="img-icon_s/bell.svg" alt=""></div>
+                <div class="news"><img class="small-icons" src="img/img-icon_s/megaphone.svg" alt=""></div>
+                <div class="notifications"><img class="small-icons" src="img/img-icon_s/bell.svg" alt=""></div>
                 <a class="profile" href="steamprofil.html">
-                    <img class="" src="img-profile_s/muckemannam-pfp.jpg" alt="">
+                    <img class="" src="img/img-profile_s/muckemannam-pfp.jpg" alt="">
                     <span class="profile-name">Muckemannen</span>
                     <span class="profile-money">0,67€</span>
                     
@@ -67,7 +67,7 @@
             <div class="top-profile">
                 <div class="top-left-profile">
                     <div class="profile-pic">
-                        <img class="pfp" src="img-profile_s/steampfp.jpg" alt="">
+                        <img class="pfp" src="img/img-profile_s/steampfp.jpg" alt="">
                     </div>
                     <div class="profile-name-benjamin">
                         <div class="username-and-dropdown">
@@ -136,20 +136,5 @@
         </div>
     </div>
 </body>
-<script>
-document.querySelectorAll('button[class^="dropdown-"]').forEach(btn => {
-    btn.addEventListener('click', e => {
-        e.stopPropagation();
-        const parent = btn.parentElement;
-        document.querySelectorAll('.open').forEach(el => {
-            if (el !== parent) el.classList.remove('open');
-        });
-        parent.classList.toggle('open');
-    });
-});
-
-document.addEventListener('click', () => {
-    document.querySelectorAll('.open').forEach(el => el.classList.remove('open'));
-});
-</script> 
+<script src="js/topbar.js"></script>
 </html>
