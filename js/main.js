@@ -5,9 +5,9 @@ const searchItems = document.querySelector('.search_items');
 
 const games = [
     { name: 'Alan Wake 2', id: 1903780 },
-    { name: 'Counter-Strike 2', id: 730 },
-    { name: 'Alan Wake Remastered', id: 1458140 },
+    { name: 'League of Legends', id: null, img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MGnOIybXnvMKQSbRVdMuZwHaEK%3Fpid%3DApi&f=1&ipt=fa2b45ed758fc89501edbd889e619ff5a580718790ebcbd0f7cf305e29e41610&ipo=images' },    { name: 'Alan Wake Remastered', id: 1458140 },
     { name: 'Among Us', id: 945360 },
+    { name: 'Counter-Strike 2', id: 730 },
     { name: 'Anno 1800', id: 916440 },
     { name: "Assassin's Creed Mirage", id: 2261570 },
     { name: "Assassin's Creed Odyssey", id: 812140 },
@@ -265,16 +265,28 @@ const games = [
 function displayGames(gamesToDisplay) {
     searchItems.innerHTML = '';
     gamesToDisplay.forEach(game => {
+        const imgSrc = game.img
+            ? game.img
+            : `https://cdn.akamai.steamstatic.com/steam/apps/${game.id}/capsule_231x87.jpg`;
         const gameDiv = document.createElement('div');
         gameDiv.className = 'search-item';
         gameDiv.innerHTML = `
             <div class="game-div">
                 <img class="search-item-img"
-                    src="https://cdn.akamai.steamstatic.com/steam/apps/${game.id}/capsule_231x87.jpg"
+                    src="${imgSrc}"
                     width="40" height="19"
                     onerror="this.style.display='none'">
                 <div class="game-name">${game.name}</div>
             </div>`;
+
+        gameDiv.addEventListener('click', () => {
+            if (game.url) {
+                window.open(game.url, '_blank');
+            } else if (game.id) {
+                window.open(`https://store.steampowered.com/app/${game.id}`, '_blank');
+            }
+        });
+
         searchItems.appendChild(gameDiv);
     });
 }

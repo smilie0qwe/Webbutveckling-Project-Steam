@@ -16,12 +16,11 @@ body {
     display: flex; 
 }
 
-
 .sidebar-left {
     width: 340px;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     background: linear-gradient(to bottom, #2B3139, #24282F);
-
 
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
@@ -29,26 +28,25 @@ body {
 }
 
 
-.sidebar-left:hover {
+
+.search_items:hover {
     scrollbar-color: #555 transparent;
 }
 
-
-.sidebar-left::-webkit-scrollbar {
+.search_items::-webkit-scrollbar {
     width: 4px;
 }
 
-.sidebar-left::-webkit-scrollbar-track {
+.search_items::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.sidebar-left::-webkit-scrollbar-thumb {
+.search_items::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 10px;
-    transition: background 0.3s ease;
 }
 
-.sidebar-left:hover::-webkit-scrollbar-thumb {
+.search_items:hover::-webkit-scrollbar-thumb {
     background: #555;
 }
 
