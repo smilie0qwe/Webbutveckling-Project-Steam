@@ -110,3 +110,62 @@
     flex-direction: column;
     border-radius: 4px;
 }
+
+.comments-comments{
+    background-color: rgba(17, 17, 17, 0.8);
+    width: 580px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.commentspfp-benjamin{
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comments-personer{
+    display: flex;
+    flex-direction: row;
+}
+
+.comments-username-benjamin{
+    color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.comments-time{
+    color: #7A7A7A;
+    margin-top: 10px;
+    padding-left: 110px;
+    font-size: 13px;
+    position: absolute;
+}
+
+.comments-content-upper-part{
+    display: flex;
+    flex-direction: row;
+}
+
+.test-benjamin{
+    margin-left: 20px;
+}
+
+.kommer-att-runka{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-content{
+    color: white;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-left: 21px;
+
+}
