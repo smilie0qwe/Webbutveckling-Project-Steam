@@ -6,20 +6,65 @@ body {
 }
 
 
-.main {
-    flex: 1;
-    display: flex; 
+* {
+    box-sizing: border-box;
 }
 
 
+.main {
+    height: 87vh;
+    display: flex; 
+}
+
 .sidebar-left {
-    width: 235px;
+    width: 340px;
     background: linear-gradient(to bottom, #2B3139, #24282F);
+
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+}
+
+
+
+.search_items:hover {
+    scrollbar-color: #555 transparent;
+}
+
+.search_items::-webkit-scrollbar {
+    width: 4px;
+}
+
+.search_items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.search_items::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.search_items:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+
+.sidebar-resizer {
+    width: 2px;
+    cursor: ew-resize;
+    background: #2e2e35;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+
+.sidebar-resizer:hover,
+.sidebar-resizer.dragging {
+    background: #555;
 }
 
 
 .home-outside {
-    height: 33px;
+    height: 43px;
     background: #171D25;
     padding: 5px 0px; 
     display: flex;
@@ -28,7 +73,7 @@ body {
 
 
 .home {
-    width: 80%;
+    width: 100%;
     background-color: #3E4047;
     border-radius: 2px;
     align-items: center;
@@ -40,7 +85,7 @@ body {
 
 
 .home-options {
-    width: 33px;
+    aspect-ratio: 1/1;
     background-color: #25272D;
     border-radius: 2px;
     margin-left: 5px;
@@ -50,22 +95,25 @@ body {
 
 .sort-menu {
     display: flex;
+    width: 100%;
     flex-direction: row;
     height: 40px;
     padding: 4px 0px;
     align-items: center;
     color: white;
     gap: 4px;
+        padding-right: 5px;
 }
 
 
 .sort-button {
     background-color: #25282D;
     border-radius: 2px;
-    width: 60%;
-    height: 74%;
-    display: flex;
-    justify-content: center;
+    width: 75%;
+    height: 30px;
+    display: flex;  
+    overflow: hidden;
+    text-wrap: nowrap;
     align-items: center;
     box-shadow: none;
     border: none;
@@ -95,7 +143,7 @@ body {
     flex-direction: row;
     align-items: center;
     height: 30px;
-    width: 93%;
+    width: 100%;
 }
 
 
@@ -104,7 +152,7 @@ body {
     width: 100%;
     height: 30px;
     padding-left: 8px;
-    color: rgb(0, 0, 0);
+    color: rgb(133, 133, 133);
     border: none;
     font-size: 15px;
     align-items: center;
@@ -114,7 +162,7 @@ body {
 .filter {
     background-color: #25282D;
     width: 34.7px;
-    height: 32px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +191,12 @@ body {
 .search_items {
     overflow-y: auto;
     border-radius: 4px;
+    text-wrap: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+    height: calc(100vh - 240px);
+    margin-top: 12px;
 }
 
 
@@ -164,6 +218,7 @@ body {
     transition: background 0.2s ease;
 }
 
+
 .search-item:hover {
     background-color: #3e444e;
 }
@@ -173,9 +228,15 @@ body {
 
 
 
+
+
+
+
+
+
 .main-content {
     background-color: #2D333C;
-    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-left: #17191B solid 1px;
@@ -247,12 +308,14 @@ body {
     display: flex;
     align-items: center;
     border-radius: 20px;
+        transition: background 0.2s ease;
 }
 
 
 .shelf-line-detection:hover {
     background-color: #373C45;
     transform: translateY(0);
+        transition: background 0.2s ease;
 }
 
 
