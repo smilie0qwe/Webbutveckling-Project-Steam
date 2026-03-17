@@ -131,6 +131,7 @@
 .comments-personer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .comments-username-benjamin{
@@ -143,9 +144,8 @@
 .comments-time{
     color: #7A7A7A;
     margin-top: 10px;
-    padding-left: 160px;
     font-size: 13px;
-    position: absolute;
+    padding-right: 4px;
 }
 
 .comments-content-upper-part{
@@ -171,5 +171,11 @@
 }
 
 .comments-container{
-    background-color: #121212
+    background-color: #121212;
+    padding-right:2px;
+}
+
+.comments-pfp-name-content{
+    display: flex;
+    flex-direction: row;
 }

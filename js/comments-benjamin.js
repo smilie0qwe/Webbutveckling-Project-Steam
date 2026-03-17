@@ -11,14 +11,16 @@ function createComment(username, content, time, imgSrc = "") {
   return `
     <div class="comments-comments">
       <div class="comments-personer">
-        <img class="commentspfp-benjamin" src="${imgSrc}" alt="">
-        <div class="comments-content-upper-part">
-          <div class="kommer-att-runka">
-            <span class="comments-username-benjamin">${username}</span>
-            <span class="comments-content">${content}</span>
-          </div>
-          <span class="comments-time">${time}</span>
+        <div class="comments-pfp-name-content">
+            <img class="commentspfp-benjamin" src="${imgSrc}" alt="">
+            <div class="comments-content-upper-part">
+                <div class="kommer-att-runka">
+                <span class="comments-username-benjamin">${username}</span>
+                <span class="comments-content">${content}</span>
+                </div>
+            </div>
         </div>
+          <span class="comments-time">${time}</span>
       </div>
     </div>
 
