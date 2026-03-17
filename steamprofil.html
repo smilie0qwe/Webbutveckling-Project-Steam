@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/steamprofile.css">
     <link rel="stylesheet" href="css/steammiddleprofile.css">
     <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/bottombar.css">
+    <link rel="stylesheet" href="css/rightside.css">
 </head>
 <body>
         <div class="topbar">
@@ -58,6 +60,7 @@
                     <img class="" src="img/img-profile_s/muckemannam-pfp.jpg" alt="">
                     <span class="profile-name">Muckemannen</span>
                     <span class="profile-money">0,67€</span>
+                    
                 </a>
             </div>
         </div>
@@ -68,15 +71,33 @@
                         <img class="pfp" src="img/img-profile_s/steampfp.jpg" alt="">
                     </div>
                     <div class="profile-name-benjamin">
-                        <span class="usernam">Muckemannen</span>
+                        <div class="username-and-dropdown">
+                            <span class="usernam">Muckemannen</span>
+                            <button class="button-downarrow">
+                                <img class="downarrow-benjamin" src="img-icon_s/down-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        
                         <span class="realname">Marcus Werlinder</span>
                         <span class="spelarspel">Spelar spel</span>
                     </div>    
                 </div>
-                <div class="level-container">
-                    <span class="level-text">Level</span>
-                    <div class="level-number">10</div>
+                <div class="profile-right-side">
+                    <div class="level-container">
+                        <span class="level-text">Level</span>
+                        <div class="level-number">10</div>
+                    </div>
+                </div> 
+            </div>
+            <div class="middle-right-profile">
+                <span class="offline-benjamin">Currently Offline</span>
+                <div class="catagories-presets-benjamin">
+                    <button class="catagories-button-benjamin"> 
+                    <span class="catagories-benjamin">Profile Awards</span>
+                    </button>
+                    <span class="catagories-number-benjamin">0</span>
                 </div>
+                
             </div>
             <div class="middle-profile">
                 <div class="recent-games-bar">
@@ -90,10 +111,48 @@
                 <div class="games-benjamin">
                     <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3772810/3542f2960841d2c74d09ccd6a03d6673919868bc/capsule_184x69.jpg?t=1768834820">
                     <span class="game-name">Desktop Defender</span>
+                    <div class="game-left-side-benjamin">
+                        <span class="playtime-benjamin">5.9 hr on record</span>
+                        <span class="playtime-two-weeks">last played 19 feb</span>
+                    </div>
+                </div>
+                <div class="games-benjamin">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4361880/2298cd64b991513d6b92600a918fefca8ab8ebbe/capsule_184x69.jpg?t=1771249389" alt="">
+                    <span class="game-name">Card Corner Demo</span>
+                    <div class="game-left-side-benjamin">
+                        <span class="playtime-benjamin">103 hr on record</span>
+                        <span class="playtime-two-weeks">last played 20 feb</span>
+                    </div>
+                </div>
+                <div class="games-benjamin">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1281930/capsule_184x69.jpg?t=1718143594" alt="">
+                    <span class="game-name">TmodLoader</span>
+                    <div class="game-left-side-benjamin">
+                        <span class="playtime-benjamin">453 hr on record</span>
+                        <span class="playtime-two-weeks">last played 19 feb</span>
+                    </div>
+                </div>
+                <div class="middle-left-profile-bottom-text">
+                    <span class="view">View</span>
+                    <button class="all-recently-played">All Recently Played</button>
+                    <span>|</span>
+                    <button class="wishlist">Wishlist</button>  
                 </div>
             </div>
+            
+            <div class="comments-benjamin">
+                <span class="comments-text">Comments</span>
+                <div class="comments-container"></div>
+            </div>
+        </div>
+        <div class="bottombar">
+            <div class="bottom-left"><img src="" alt=""><a href="#">Add Games</a></div>
+            <div class="bottom-middle"><img src="" alt=""><a href="#">Downloads</a></div>
+            <div class="bottom-right"><a href="#">Friends & Chat</a><img src="" alt=""></div>
         </div>
     </div>
 </body>
 <script src="js/topbar.js"></script>
+<script src="js/comments-benjamin.js"></script>
+
 </html>

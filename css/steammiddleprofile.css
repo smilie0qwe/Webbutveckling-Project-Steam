@@ -25,26 +25,151 @@
 }
 
 .middle-left-profile{
-    background-color: rgba(34, 33, 46, 0.7);
-    background-color: pink;
+    background-color: rgba(17, 17, 17, 0.8);
     width: 580px;
     margin-left: 15px; 
-    border-radius: 5px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .games-benjamin{
     display: flex;
     flex-direction: row;
     background-color: rgba(10, 10, 10, 0.8);
-    background-color: green;
-
     border-radius: 4px;
     padding: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .game-name{
     margin-left: 4px;
     padding-top: 8px;
     color: white;
+}
+
+.game-left-side-benjamin{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 140px;
+    font-size: 13px;
+    color: rgba(121, 121, 121);
+}
+
+.middle-left-profile-bottom-text{
+    padding-left: 340px;
+}
+
+.all-recently-played,
+.wishlist{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.button-downarrow{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.downarrow-benjamin{
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+.view{
+    color: rgba(128, 128, 128, 0.4);
+}
+
+.wishlist:hover,
+.all-recently-played:hover{
+    color: #66C0F4;
+}
+
+.comments-text{
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.comments-benjamin{
+    background-color: rgba(10, 10, 10, 0.8);
+    margin-top: 100px;
+    width: 580px;
+    height: 40px;
+    margin-left: 15px; 
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.comments-comments{
+    background-color: rgba(17, 17, 17, 0.8);
+    width: 580px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.commentspfp-benjamin{
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comments-personer{
+    display: flex;
+    flex-direction: row;
+}
+
+.comments-username-benjamin{
+    color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.comments-time{
+    color: #7A7A7A;
+    margin-top: 10px;
+    padding-left: 160px;
+    font-size: 13px;
+    position: absolute;
+}
+
+.comments-content-upper-part{
+    display: flex;
+    flex-direction: row;
+}
+
+.test-benjamin{
+    margin-left: 20px;
+}
+
+.kommer-att-runka{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-content{
+    color: white;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-left: 21px;
+
+}
+
+.comments-container{
+    background-color: #121212
 }
