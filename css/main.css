@@ -78,7 +78,7 @@ body {
     border-radius: 2px;
     align-items: center;
     display: flex;
-    color: white;
+    color: #AEAEAF;
     font-size: 13px;
     padding-left: 4px;
 }
@@ -108,6 +108,7 @@ body {
 
 .sort-button {
     background-color: #25282D;
+    color: #AEAEAF;
     border-radius: 2px;
     width: 75%;
     height: 30px;

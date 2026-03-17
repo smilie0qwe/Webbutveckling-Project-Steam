@@ -5,7 +5,7 @@ const searchItems = document.querySelector('.search_items');
 
 const games = [
     { name: 'Alan Wake 2', id: 1903780 },
-    { name: 'League of Legends', id: null, img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MGnOIybXnvMKQSbRVdMuZwHaEK%3Fpid%3DApi&f=1&ipt=fa2b45ed758fc89501edbd889e619ff5a580718790ebcbd0f7cf305e29e41610&ipo=images' },    
+    { name: 'League of Legends', id: null, img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MGnOIybXnvMKQSbRVdMuZwHaEK%3Fpid%3DApi&f=1&ipt=fa2b45ed758fc89501edbd889e619ff5a580718790ebcbd0f7cf305e29e41610&ipo=images', url: 'https://arcade.pirillo.com/touch-grass.html' },    
     { name: 'Alan Wake Remastered', id: 1458140 },
     { name: 'Among Us', id: 945360 },
     { name: 'Counter-Strike 2', id: 730 },
@@ -345,8 +345,8 @@ resizer.addEventListener('mousedown', (e) => {
 
 document.addEventListener('mousemove', (e) => {
     if (!isResizing) return;
-    const newWidth = e.clientX; // distance from left edge
-    if (newWidth >= 150 && newWidth <= 1200) { // min/max limits
+    const newWidth = e.clientX;
+    if (newWidth >= 150 && newWidth <= 1200) {
         sidebar.style.width = newWidth + 'px';
     }
 });
