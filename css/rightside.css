@@ -63,6 +63,13 @@
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.friends-colum :hover{
+    background-color: #3A3A3A;
+    border-color: pink;
 }
 
 .friends-preset{
@@ -73,22 +80,33 @@
 }
 
 .friends-name-online ,
-.friends-status-online{
-    color: cyan;
+.friends-status-online,
+.friends-name-offline ,
+.friends-status-offline,
+.friends-name-playing ,
+.friends-status-playing,
+.friends-game{
     padding-left: 10px;
     font-size: 12px;
+}
+
+.friends-name-online ,
+.friends-status-online{
+    color: cyan;
 }
 
 .friends-name-offline ,
 .friends-status-offline{
     color: #7A7A7A;
-    padding-left: 10px;
-    font-size: 12px;
 }
 
-.friends-colum :hover{
-    background-color: #3A3A3A;
+.friends-name-playing ,
+.friends-status-playing,
+.friends-game{
+    color: #83A638;
 }
+
+
 
 .friends-pfp{
     width: 32px;
