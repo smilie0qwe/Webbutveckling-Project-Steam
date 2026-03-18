@@ -1,4 +1,4 @@
-// sidebar search
+// sidebar search____________________________________________________
 
 const searchBar = document.getElementById('search_bar');
 const searchItems = document.querySelector('.search_items');
@@ -303,33 +303,59 @@ searchBar.addEventListener('input', (e) => {
 });
 
 
-// main
+// main______________________________________________________________
 
 const mainItems = document.querySelector('.main_items');
+
 const shelves = [
-    { name: 'Favorites', id: 1 },
-    { name: 'To Play', id: 2 },
-    { name: 'Completed', id: 3 },
+    { 
+        name: 'All Games', id: 1, 
+        gameIds: games.map(g => g.id).filter(Boolean) 
+    },
+    { 
+        name: 'Steam Family', id: 2, gameIds: [
+            550, 620, 220, 945360, 268910,
+            504230, 391540, 728880, 1426210, 413150
+        ]
+    },
 ];
+
 function displayShelves(shelvesToDisplay) {
     mainItems.innerHTML = '';
     shelvesToDisplay.forEach(shelf => {
         const shelfDiv = document.createElement('div');
         shelfDiv.className = 'shelf';
-        shelfDiv.innerHTML = 
-        `<div class="top-shelf">
-            <span class="shelf-name">${shelf.name}</span>
-            <div class="shelf-line-detection">
-                <div class="shelf-line"></div>
+
+        const gameCardsHTML = shelf.gameIds.map(id => `
+            <div class="game-card" onclick="window.open('https://store.steampowered.com/app/${id}', '_blank')">
+                <img 
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/${id}/capsule_231x87.jpg"
+                    onerror="this.parentElement.style.display='none'"
+                    alt="Game ${id}">
             </div>
-        </div>`;
+        `).join('');
+
+        shelfDiv.innerHTML = `
+            <div class="shelfs">
+                <div class="top-shelf">
+                    <span class="shelf-name">${shelf.name}</span>
+                    <div class="shelf-line-detection">
+                        <div class="shelf-line"></div>
+                    </div>
+                </div>
+                <div class="shelf-content">
+                    ${gameCardsHTML}
+                </div>
+            </div>`;
+
         mainItems.appendChild(shelfDiv);
     });
 }
+
 displayShelves(shelves);
 
 
-// sidebar resize
+// sidebar resize____________________________________________________
 
 const sidebar = document.querySelector('.sidebar-left');
 const resizer = document.querySelector('.sidebar-resizer');

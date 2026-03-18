@@ -241,6 +241,8 @@ body {
     display: flex;
     flex-direction: column;
     border-left: #17191B solid 1px;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 
@@ -270,14 +272,32 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
-    overflow-y: auto;
-    height: 300px;
+    margin-bottom: 20px;
 }
 
 .shelf {
     display: flex;
-    height: 300px;
+}
+
+
+.shelfs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #2D333C;
+    height: auto;
+}
+
+
+.game-card {
+    width: 231px;
+    height: 100%;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
@@ -301,6 +321,12 @@ body {
     overflow: hidden;
 }
 
+
+.shelf-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(231px, 1fr));
+    gap: 10px;
+}
 
 
 .shelf-line-detection {
