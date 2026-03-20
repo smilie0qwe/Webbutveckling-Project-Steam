@@ -43,7 +43,13 @@
     padding: 8px;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: space-between;
 }
+
+.middle-left-profile :hover{
+    background-color: pink;
+    cursor: pointer;
+}   
 
 .game-name{
     margin-left: 4px;
@@ -58,6 +64,7 @@
     padding-left: 140px;
     font-size: 13px;
     color: rgba(121, 121, 121);
+    justify-content: space-between;
 }
 
 .middle-left-profile-bottom-text{
@@ -132,6 +139,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.comments-container :hover{
+    background-color: #3A3A3A;
+}
+
+.comments-personer :hover{
+    background-color: #3A3A3A;
 }
 
 .comments-username-benjamin{

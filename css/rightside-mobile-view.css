@@ -1,0 +1,53 @@
+@media screen and (max-width: 889px) {
+    .middle-right-profile {
+        margin-left: 15px;
+        margin-top: 530px;  
+        width: 580px;      
+    }
+
+    .level-container{ 
+        padding-left: 105px;     
+    }
+
+    .comments-benjamin{
+        margin-top: 570px;
+    }
+
+    .profilebackground{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 596px) {
+    .middle-profile,
+    .middle-left-profile,
+    .middle-right-profile,
+    .comments-benjamin,
+    .comments-comments,
+    .comments-personer{
+        width: 500px;
+    }
+
+    .comments-personer{
+        width: 500px;
+    }
+
+    .middle-right-profile {
+        margin-top: 660px;
+    }
+
+    .profilebackground{
+        height: 1800px;
+    }
+}
+
+
+
+@media screen and (max-width: 578px) {
+    .level-container{
+        margin-top: 30px;
+        
+        padding-left: 0px;
+    }
+}
