@@ -244,6 +244,23 @@ body {
     overflow-y: auto;
 }
 
+.main-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.main-content:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
 
 .content-news {
     height: 220px;
@@ -251,6 +268,44 @@ body {
     display: flex;
     border-top: #24282F solid 1px;
     flex-shrink: 0;
+    overflow-y: auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.content-news:hover {
+    scrollbar-color: #555 transparent;
+}
+
+.content-news::-webkit-scrollbar {
+    width: 4px;
+}
+
+.content-news::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-news::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.content-news:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 300px;
+    height: 90%;
+    padding: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    color: #c7d5e0;
+    cursor: pointer;
 }
 
 
@@ -301,6 +356,7 @@ body {
     background-size: cover;
     background-position: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .game-card img {
