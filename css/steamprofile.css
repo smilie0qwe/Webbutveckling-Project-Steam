@@ -12,11 +12,16 @@ body::-webkit-scrollbar {
 
 .profilebackground{
     background-color: rgba(34, 33, 46, 0.9);
-    height: 1200px;
+    height: 87vh;
     width: 890px;
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto;
 }
+
+.profilebackground::-webkit-scrollbar {
+    width: 0px;
+}  
 
 .profile-pic{
     height: 154px;
@@ -78,6 +83,4 @@ body::-webkit-scrollbar {
     flex-direction: row;
     padding-top: 20px; 
 }
-
-
 
