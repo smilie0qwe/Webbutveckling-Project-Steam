@@ -10,6 +10,10 @@ body::-webkit-scrollbar {
     width: 0px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .profilebackground{
     background-color: rgba(34, 33, 46, 0.9);
     height: 87vh;
