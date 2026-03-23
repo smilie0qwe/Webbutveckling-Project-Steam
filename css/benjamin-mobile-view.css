@@ -1,0 +1,132 @@
+@media screen and (max-width: 889px) {
+    .middle-right-profile {
+        margin-left: 15px;
+        margin-top: 500px;  
+        width: 580px;      
+    }
+
+    .level-container{ 
+        padding-left: 105px;     
+    }
+
+    .comments-benjamin{
+        margin-top: 600px;
+    }
+
+    .profilebackground{
+        width: 100%;
+    }
+
+    .profilebackground{
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .level-container{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 596px) {
+    .middle-profile,
+    .middle-left-profile,
+    .middle-right-profile,
+    .comments-benjamin,
+    .comments-comments,
+    .comments-personer{
+        width: 500px;
+    }
+
+    .comments-benjamin{
+        margin-top: 600px;
+    }
+
+    .comments-personer{
+        width: 500px;
+    }
+
+    .middle-right-profile {
+        margin-top: 520px;
+    }
+
+    .profilebackground{
+        height: 1800px;
+    }
+
+    .profilebackground{
+        height: 1650px;
+    }
+    
+}
+
+@media screen  and (max-width: 1440px){
+    .level-number-mobile{
+    border-radius: 9999px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: red;  
+    border-style: solid;
+    color: white;
+    font-size: 12px;
+}
+}
+
+@media screen and (min-width: 605px) {
+    .furry{
+        display: none;
+    }
+    
+}
+
+
+
+@media  screen and (max-width: 515px){
+    .middle-profile,
+    .middle-left-profile,
+    .middle-right-profile,
+    .comments-benjamin,
+    .comments-comments,
+    .comments-personer{
+        width: 400px;
+    }
+
+    
+
+    .middle-left-profile-bottom-text{
+        padding-left: 0px;
+    }
+
+    
+}
+
+@media screen and (max-width: 515px) {
+    .mobile-game-name{
+        display: show;
+    }
+
+    .game-name{
+        display: none;
+    }
+}
+
+.mobile-username-lvl{
+    display: flex;
+}
+
+.mobile-game-img-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-game-name{
+    display: none;
+    color: white;
+    font-size: 16px;
+}
