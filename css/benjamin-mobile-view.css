@@ -1,8 +1,22 @@
 @media screen and (max-width: 889px) {
-    .middle-right-profile {
-        margin-left: 15px;
-        margin-top: 500px;  
-        width: 580px;      
+    .middle-right-fuckass-profile {
+        flex-direction: column;
+    }
+
+    .middle-right-profile{
+        width: 580px;
+    }
+
+    .middle-left,
+    .middle-left-profile,
+    .topbar-recent-games,
+    .middle-right-profile,
+    .comments-benjamin{
+        width: auto;
+    }
+
+    .topbar-recent-games{
+        
     }
 
     .level-container{ 
@@ -10,7 +24,7 @@
     }
 
     .comments-benjamin{
-        margin-top: 600px;
+        margin-top: 20px;
     }
 
     .profilebackground{
@@ -41,23 +55,20 @@
     .comments-benjamin,
     .comments-comments,
     .comments-personer{
-        width: 500px;
+        width: auto;
     }
 
     .comments-benjamin{
-        margin-top: 600px;
+        margin-top: 30px;
     }
 
     .comments-personer{
         width: 500px;
     }
 
-    .middle-right-profile {
-        margin-top: 520px;
-    }
 
     .profilebackground{
-        height: 1800px;
+        height: auto;
     }
 
     .profilebackground{
@@ -97,7 +108,7 @@
     .comments-benjamin,
     .comments-comments,
     .comments-personer{
-        width: 400px;
+        width: auto;
     }
 
     
@@ -117,7 +128,10 @@
     .game-name{
         display: none;
     }
+
+    
 }
+
 
 .mobile-username-lvl{
     display: flex;
@@ -130,7 +144,7 @@
 }
 
 .mobile-game-name{
-    display: none;
+    display: flex;
     color: white;
     font-size: 16px;
 }

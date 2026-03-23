@@ -88,3 +88,7 @@ body::-webkit-scrollbar {
     padding-top: 20px; 
 }
 
+.middle-right-fuckass-profile{
+    display: flex;
+    flex-direction: row;
+}
