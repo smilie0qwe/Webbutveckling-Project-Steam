@@ -3,21 +3,18 @@
         flex-direction: column;
     }
 
-    .middle-right-profile{
-        width: 580px;
-    }
+    
 
     .middle-left,
     .middle-left-profile,
     .topbar-recent-games,
     .middle-right-profile,
-    .comments-benjamin{
+    .comments-benjamin,
+    .topbar-recent-games{
         width: auto;
     }
 
-    .topbar-recent-games{
-        
-    }
+    
 
     .level-container{ 
         padding-left: 105px;     
@@ -37,6 +34,10 @@
 
     .container{
         justify-content: center;
+    }
+
+    .middle-right-profile{
+        margin-top: 25px;
     }
 }
 
@@ -117,25 +118,13 @@
         padding-left: 0px;
     }
 
-    
-}
-
-@media screen and (max-width: 515px) {
-    .mobile-game-name{
-        display: show;
-    }
-
     .game-name{
         display: none;
     }
-
-    
 }
 
 
-.mobile-username-lvl{
-    display: flex;
-}
+
 
 .mobile-game-img-name{
     display: flex;
@@ -144,7 +133,15 @@
 }
 
 .mobile-game-name{
-    display: flex;
+    margin-top: 5px;
+    display: none;
     color: white;
     font-size: 16px;
 }
+
+ @media screen and (max-width: 515px){
+    .mobile-game-name{
+        display: flex;
+    }
+    
+ }

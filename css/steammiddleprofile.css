@@ -1,8 +1,5 @@
 .middle-profile{
     background-color: rgba(10, 10, 10, 0.8);
-    margin-top: 100px;
-    width: 580px;
-    height: 40px;
     margin-left: 15px; 
     justify-content: space-between;
     display: flex;
@@ -121,12 +118,11 @@
 
 .comments-comments{
     background-color: rgba(17, 17, 17, 0.8);
-    width: 580px;
+    
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
+    
 }
 
 .commentspfp-benjamin{
@@ -164,14 +160,6 @@
     padding-right: 4px;
 }
 
-.comments-content-upper-part{
-    display: flex;
-    flex-direction: row;
-}
-
-.test-benjamin{
-    margin-left: 20px;
-}
 
 .kommer-att-runka{
     display: flex;
@@ -193,5 +181,4 @@
 
 .comments-pfp-name-content{
     display: flex;
-    flex-direction: row;
 }

@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
     width: 154px;
     padding-left: 30px;
     padding-top: 20px;
+    padding-bottom: 260px;
 }
 
 .profile-name-benjamin{
@@ -54,6 +55,8 @@ body::-webkit-scrollbar {
     color: lightgray;
     padding-top: 10px;
 }
+
+.profile-pic{}
 
 .spelarspel{
     font-size: 12px;
