@@ -1,5 +1,5 @@
 @media screen and (max-width: 889px) {
-    .middle-right-fuckass-profile {
+    .middle-right-fuckass-container {
         flex-direction: column;
     }
 
@@ -14,7 +14,9 @@
         width: auto;
     }
 
-    
+    .under-level-buttons{
+        margin-left: 100px;
+    }
 
     .level-container{ 
         padding-left: 105px;     
@@ -94,7 +96,7 @@
 }
 
 @media screen and (min-width: 605px) {
-    .furry{
+    .level-number-mobile-container{
         display: none;
     }
     
@@ -145,3 +147,14 @@
     }
     
  }
+
+@media screen and (max-width: 531px ){
+    .under-level-buttons{
+        display: none;
+    }
+
+    .under-level-buttons-mobile{
+        display: flex;
+    }
+}
+

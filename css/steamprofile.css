@@ -91,7 +91,38 @@ body::-webkit-scrollbar {
     padding-top: 20px; 
 }
 
-.middle-right-fuckass-profile{
+.middle-right-fuckass-container{
     display: flex;
     flex-direction: row;
+}
+
+.under-level-buttons{
+    margin-left: 230px;
+    margin-top: 10px;
+}
+
+.button-message,
+.button-more{
+    height: 30px;
+    color: #BFC0C2;
+    background-color: #2B3444;
+    border: none;
+    border-radius: 2px;
+}
+
+.under-level-buttons-mobile{
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+.under-level-buttons :hover,
+.under-level-buttons-mobile :hover{
+    background-color: #353E4E;
+    color: #FAFAFB;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+
 }
