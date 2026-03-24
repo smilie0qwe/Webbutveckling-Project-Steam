@@ -97,7 +97,7 @@
     align-items: center;
     color: white;
     gap: 4px;
-        padding-right: 5px;
+    padding-right: 5px;
 }
 
 
@@ -136,6 +136,18 @@
 .sort-button:hover {
     background-color: #3b3f46;
     color: white;
+}
+
+
+.sort-time img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.sort-playable img {
+    width: 20px;
+    height: 20px;
 }
 
 
