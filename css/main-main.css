@@ -1,0 +1,226 @@
+.main-content {
+    background-color: #2D333C;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: #17191B solid 1px;
+    overflow-y: auto;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.main-content:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+
+.content-news {
+    height: 270px;
+    background: linear-gradient(to bottom, #2D333C, #171D25);
+    display: flex;
+    flex-direction: column;
+    border-top: #24282F solid 1px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    gap: 20px;
+    padding: 10px;
+    color: #c7d5e0;
+}
+
+
+.news-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+
+.news-bottom {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    background-color: #292E37;
+    border-radius: 4px;
+    width: 62%;
+}
+
+
+.news-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    position: absolute;
+}
+
+
+.news-bottom img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+
+.news-info {
+    height: 35px;
+    align-items: center;
+}
+
+
+.content-news:hover {
+    scrollbar-color: #555 transparent;
+}
+
+.content-news::-webkit-scrollbar {
+    width: 4px;
+}
+
+.content-news::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-news::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.content-news:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    color: #c7d5e0;
+    cursor: pointer;
+}
+
+
+.add-shelf {
+    height: 40px;
+    background-color: #2D333C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: #24282F solid 1px;
+    justify-content: center;
+    align-items: center;
+    color: #5E6267;
+    padding-top: 10px;
+}
+
+
+.main_items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.shelf {
+    display: flex;
+}
+
+
+.shelfs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #2D333C;
+    height: auto;
+}
+
+
+.game-card {
+    width: 100%;
+    aspect-ratio: 231 / 87;
+    border-radius: 4px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.top-shelf {
+    height: 40px;
+    width: 100%;
+    background-color: #2D333C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.shelf-name {
+    font-size: 16px;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+
+.shelf-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(231px, 1fr));
+    gap: 10px;
+}
+
+
+.shelf-line-detection {
+    height: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+        transition: background 0.2s ease;
+}
+
+
+.shelf-line-detection:hover {
+    background-color: #373C45;
+    transform: translateY(0);
+        transition: background 0.2s ease;
+}
+
+
+.shelf-line {
+    background-color: #373C45;
+    height: 2px;
+    width: 100%;
+}

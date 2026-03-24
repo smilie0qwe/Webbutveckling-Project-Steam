@@ -1,0 +1,264 @@
+.sidebar-left {
+    width: 340px;
+    background: linear-gradient(to bottom, #2B3139, #24282F);
+
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+}
+
+
+
+.search_items:hover {
+    scrollbar-color: #555 transparent;
+}
+
+.search_items::-webkit-scrollbar {
+    width: 4px;
+}
+
+.search_items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.search_items::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.search_items:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+
+.sidebar-resizer {
+    width: 2px;
+    cursor: ew-resize;
+    background: #2e2e35;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+
+.sidebar-resizer:hover,
+.sidebar-resizer.dragging {
+    background: #555;
+}
+
+
+.home-outside {
+    height: 43px;
+    background: #171D25;
+    padding: 5px 0px; 
+    display: flex;
+    flex-direction: row;
+}
+
+
+.home {
+    width: 100%;
+    background-color: #3E4047;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+    color: #AEAEAF;
+    font-size: 13px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+
+.home:hover {
+    background-color: #52565c;
+    color: white;
+}
+
+
+.home-options {
+    aspect-ratio: 1/1;
+    background-color: #25272D;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.home-options:hover {
+    background-color: #3b3f46;
+}
+
+
+.sort-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 40px;
+    padding: 4px 0px;
+    align-items: center;
+    color: white;
+    gap: 4px;
+        padding-right: 5px;
+}
+
+
+.sort-button {
+    background-color: #25282D;
+    color: #AEAEAF;
+    border-radius: 2px;
+    width: 75%;
+    height: 30px;
+    display: flex;  
+    overflow: hidden;
+    text-wrap: nowrap;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.sort-button img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+
+.sort-button span {
+    width: 100%;
+    text-align: left;
+}
+
+
+.sort-button:hover {
+    background-color: #3b3f46;
+    color: white;
+}
+
+
+.back-top {
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    background-color: #32373E;
+    cursor: pointer;
+}
+
+
+.back-top:hover {
+    background-color: #3b3f46;
+}
+
+
+.sort-time, .sort-playable {
+    font-size: 20px;
+    margin-left: 5px;
+    color: #AEAEAF;
+    cursor: pointer;
+}
+
+
+.sort-time:hover, .sort-playable:hover {
+    font-size: 20px;
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+
+.search-input {
+    background-color: #25282D;
+    width: 100%;
+    height: 30px;
+    padding-left: 8px;
+    color: rgb(133, 133, 133);
+    border: none;
+    font-size: 15px;
+    align-items: center;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filter {
+    background-color: #25282D;
+    width: 34.7px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+
+.filter:hover {
+    background-color: #3b3f46;
+}
+
+
+.search-input:hover {
+    background: #1e2025;
+    box-shadow: inset 0px 0px 10px #0a0a0c;
+    color: #c7d5e0;
+}
+
+
+.search-input:focus {
+    background: #1e2025;
+    box-shadow: inset 0px 0px 10px #0a0a0c;
+    outline: none;
+    color: #ccc;
+}
+
+
+.search_items {
+    overflow-y: auto;
+    border-radius: 4px;
+    text-wrap: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease;
+    height: calc(100vh - 240px);
+    margin-top: 12px;
+}
+
+
+.game-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+
+.search-item {
+    padding: 2px 8px;
+    color: #c7d5e0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+
+.search-item:hover {
+    background-color: #3e444e;
+}
