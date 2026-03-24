@@ -81,6 +81,13 @@ body {
     color: #AEAEAF;
     font-size: 13px;
     padding-left: 4px;
+    cursor: pointer;
+}
+
+
+.home:hover {
+    background-color: #52565c;
+    color: white;
 }
 
 
@@ -90,6 +97,12 @@ body {
     border-radius: 2px;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.home-options:hover {
+    background-color: #3b3f46;
 }
 
 
@@ -118,6 +131,13 @@ body {
     align-items: center;
     box-shadow: none;
     border: none;
+    cursor: pointer;
+}
+
+
+.sort-button:hover {
+    background-color: #3b3f46;
+    color: white;
 }
 
 
@@ -130,12 +150,27 @@ body {
     box-shadow: none;
     border: none;
     background-color: #32373E;
+    cursor: pointer;
+}
+
+
+.back-top:hover {
+    background-color: #3b3f46;
 }
 
 
 .sort-time, .sort-playable {
     font-size: 20px;
     margin-left: 5px;
+    color: #AEAEAF;
+    cursor: pointer;
+}
+
+
+.sort-time:hover, .sort-playable:hover {
+    font-size: 20px;
+    margin-left: 5px;
+    color: #ffffff;
 }
 
 
@@ -171,6 +206,12 @@ body {
     font-size: 13px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+
+.filter:hover {
+    background-color: #3b3f46;
 }
 
 

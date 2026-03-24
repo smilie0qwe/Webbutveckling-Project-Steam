@@ -81,6 +81,11 @@ font-size: 20px;
 }
 
 
+.tabs a:hover {
+color: #ffffff;
+}
+
+
 .tabs a.active {
 color: #1a9fff;
 border-bottom: 3px solid #1a9fff;
@@ -163,6 +168,12 @@ padding-bottom: 2px;
     min-width: 0;
 
     text-decoration: none;
+}
+
+
+.profile:hover {
+    background-color: #353d4d;
+    color: white;
 }
 
 
