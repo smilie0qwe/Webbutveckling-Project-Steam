@@ -1,0 +1,147 @@
+@media screen and (max-width: 889px) {
+    .middle-right-fuckass-profile {
+        flex-direction: column;
+    }
+
+    
+
+    .middle-left,
+    .middle-left-profile,
+    .topbar-recent-games,
+    .middle-right-profile,
+    .comments-benjamin,
+    .topbar-recent-games{
+        width: auto;
+    }
+
+    
+
+    .level-container{ 
+        padding-left: 105px;     
+    }
+
+    .comments-benjamin{
+        margin-top: 20px;
+    }
+
+    .profilebackground{
+        width: 100%;
+    }
+
+    .profilebackground{
+        height: 1600px;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .middle-right-profile{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .level-container{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 596px) {
+    .middle-profile,
+    .middle-left-profile,
+    .middle-right-profile,
+    .comments-benjamin,
+    .comments-comments,
+    .comments-personer{
+        width: auto;
+    }
+
+    .comments-benjamin{
+        margin-top: 30px;
+    }
+
+    .comments-personer{
+        width: 500px;
+    }
+
+
+    .profilebackground{
+        height: auto;
+    }
+
+    .profilebackground{
+        height: 1650px;
+    }
+    
+}
+
+@media screen  and (max-width: 1440px){
+    .level-number-mobile{
+    border-radius: 9999px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: red;  
+    border-style: solid;
+    color: white;
+    font-size: 12px;
+}
+}
+
+@media screen and (min-width: 605px) {
+    .furry{
+        display: none;
+    }
+    
+}
+
+
+
+@media  screen and (max-width: 515px){
+    .middle-profile,
+    .middle-left-profile,
+    .middle-right-profile,
+    .comments-benjamin,
+    .comments-comments,
+    .comments-personer{
+        width: auto;
+    }
+
+    
+
+    .middle-left-profile-bottom-text{
+        padding-left: 0px;
+    }
+
+    .game-name{
+        display: none;
+    }
+}
+
+
+
+
+.mobile-game-img-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-game-name{
+    margin-top: 5px;
+    display: none;
+    color: white;
+    font-size: 16px;
+}
+
+ @media screen and (max-width: 515px){
+    .mobile-game-name{
+        display: flex;
+    }
+    
+ }

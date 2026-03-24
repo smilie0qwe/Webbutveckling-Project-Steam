@@ -1,8 +1,5 @@
 .middle-profile{
     background-color: rgba(10, 10, 10, 0.8);
-    margin-top: 100px;
-    width: 580px;
-    height: 40px;
     margin-left: 15px; 
     justify-content: space-between;
     display: flex;
@@ -43,7 +40,17 @@
     padding: 8px;
     margin-left: 10px;
     margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.recent-games-img{
+    width: 184px;
+    height: 69px;
+    align-items: center;
+}
+
+
 
 .game-name{
     margin-left: 4px;
@@ -55,7 +62,6 @@
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-left: 140px;
     font-size: 13px;
     color: rgba(121, 121, 121);
 }
@@ -101,7 +107,6 @@
 
 .comments-benjamin{
     background-color: rgba(10, 10, 10, 0.8);
-    margin-top: 100px;
     width: 580px;
     height: 40px;
     margin-left: 15px; 
@@ -113,12 +118,11 @@
 
 .comments-comments{
     background-color: rgba(17, 17, 17, 0.8);
-    width: 580px;
+    
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
+    
 }
 
 .commentspfp-benjamin{
@@ -132,6 +136,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.comments-container :hover{
+    background-color: #3A3A3A;
+}
+
+.comments-personer :hover{
+    background-color: #3A3A3A;
 }
 
 .comments-username-benjamin{
@@ -148,14 +160,6 @@
     padding-right: 4px;
 }
 
-.comments-content-upper-part{
-    display: flex;
-    flex-direction: row;
-}
-
-.test-benjamin{
-    margin-left: 20px;
-}
 
 .kommer-att-runka{
     display: flex;
@@ -177,5 +181,4 @@
 
 .comments-pfp-name-content{
     display: flex;
-    flex-direction: row;
 }

@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif; 
-    scrollbar-width: 0px;
+    scrollbar-width: 100px;
     margin: 0;
     height: 100%;
     background-image: url("https://shared.fastly.steamstatic.com/community_assets/images/items/874400/14e1a261b94ebe19eac8234a9c7e4abaae1084bb.jpg");
@@ -10,20 +10,29 @@ body::-webkit-scrollbar {
     width: 0px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .profilebackground{
     background-color: rgba(34, 33, 46, 0.9);
-    height: 1600px;
-    min-width: 0px;
+    height: 87vh;
     width: 890px;
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto;
 }
+
+.profilebackground::-webkit-scrollbar {
+    width: 0px;
+}  
 
 .profile-pic{
     height: 154px;
     width: 154px;
     padding-left: 30px;
     padding-top: 20px;
+    padding-bottom: 260px;
 }
 
 .profile-name-benjamin{
@@ -46,6 +55,8 @@ body::-webkit-scrollbar {
     color: lightgray;
     padding-top: 10px;
 }
+
+.profile-pic{}
 
 .spelarspel{
     font-size: 12px;
@@ -71,6 +82,7 @@ body::-webkit-scrollbar {
     align-items: center;
     border-color: red;  
     border-style: solid;
+
 }
 
 .top-profile{
@@ -79,5 +91,7 @@ body::-webkit-scrollbar {
     padding-top: 20px; 
 }
 
-
-
+.middle-right-fuckass-profile{
+    display: flex;
+    flex-direction: row;
+}
